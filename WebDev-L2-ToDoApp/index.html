@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>To-Do App | Shreya Adhate</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <div>
+
+                <p class="eyebrow">
+                    DAILY PRODUCTIVITY
+                </p>
+
+                <h1>
+                    My <span>To-Do List</span>
+                </h1>
+
+                <p class="subtitle">
+                    Organise your day, one task at a time.
+                </p>
+
+            </div>
+
+            <div class="date-box">
+
+                <span id="currentDate">
+                    Today
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+
+        <!-- ================= ADD TASK ================= -->
+
+        <section class="add-section">
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What do you need to do?"
+                    autocomplete="off"
+                    maxlength="150"
+                >
+
+                <button type="submit">
+                    + Add Task
+                </button>
+
+            </form>
+
+            <p
+                id="inputError"
+                class="input-error"
+            ></p>
+
+        </section>
+
+
+        <!-- ================= TASK LISTS ================= -->
+
+        <div class="task-grid">
+
+
+            <!-- ================= PENDING ================= -->
+
+            <section class="task-section pending-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            IN PROGRESS
+                        </p>
+
+                        <h2>
+                            Pending Tasks
+                        </h2>
+
+                    </div>
+
+                    <span
+                        id="pendingCount"
+                        class="count pending-count"
+                    >
+                        0 pending
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="pendingList"
+                    class="task-list"
+                ></div>
+
+
+                <div
+                    id="pendingEmpty"
+                    class="empty-state"
+                >
+
+                    <div class="empty-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        All clear!
+                    </h3>
+
+                    <p>
+                        You don't have any pending tasks.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= COMPLETED ================= -->
+
+            <section class="task-section completed-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label completed-label">
+                            DONE
+                        </p>
+
+                        <h2>
+                            Completed Tasks
+                        </h2>
+
+                    </div>
+
+                    <span
+                        id="completedCount"
+                        class="count completed-count"
+                    >
+                        0 completed
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="completedList"
+                    class="task-list"
+                ></div>
+
+
+                <div
+                    id="completedEmpty"
+                    class="empty-state"
+                >
+
+                    <div class="empty-icon">
+                        ○
+                    </div>
+
+                    <h3>
+                        Nothing completed yet
+                    </h3>
+
+                    <p>
+                        Completed tasks will appear here.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            Created by Shreya Adhate
+        </p>
+
+        <p>
+            OASIS INFOBYTE — Web Development & Designing
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
