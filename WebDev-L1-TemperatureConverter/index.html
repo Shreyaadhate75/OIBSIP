@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter | Shreya Adhate</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                Temp<span>Convert</span>
+            </a>
+
+            <p>
+                Temperature Converter
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="converter-section">
+
+            <div class="converter-container">
+
+                <!-- Heading -->
+
+                <div class="heading">
+
+                    <p class="small-title">
+                        TEMPERATURE TOOL
+                    </p>
+
+                    <h1>
+                        Temperature
+                        <span>Converter</span>
+                    </h1>
+
+                    <p class="description">
+                        Convert temperatures easily between Celsius,
+                        Fahrenheit and Kelvin.
+                    </p>
+
+                </div>
+
+
+                <!-- Converter Card -->
+
+                <div class="converter-card">
+
+                    <!-- Input -->
+
+                    <div class="input-group">
+
+                        <label for="temperature">
+                            Enter Temperature
+                        </label>
+
+                        <input
+                            type="number"
+                            id="temperature"
+                            placeholder="Enter temperature"
+                            step="any"
+                        >
+
+                    </div>
+
+
+                    <!-- Unit -->
+
+                    <div class="input-group">
+
+                        <label for="unit">
+                            Select Input Unit
+                        </label>
+
+                        <select id="unit">
+
+                            <option value="celsius">
+                                Celsius (°C)
+                            </option>
+
+                            <option value="fahrenheit">
+                                Fahrenheit (°F)
+                            </option>
+
+                            <option value="kelvin">
+                                Kelvin (K)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Convert Button -->
+
+                    <button
+                        id="convertBtn"
+                        class="convert-btn"
+                    >
+                        Convert Temperature
+                    </button>
+
+
+                    <!-- Error Message -->
+
+                    <div
+                        id="errorMessage"
+                        class="error-message"
+                    ></div>
+
+
+                    <!-- Results -->
+
+                    <div
+                        id="results"
+                        class="results hidden"
+                    >
+
+                        <h2>
+                            Conversion Results
+                        </h2>
+
+
+                        <div class="result-grid">
+
+                            <!-- Celsius -->
+
+                            <div class="result-card">
+
+                                <div class="result-icon">
+                                    °C
+                                </div>
+
+                                <div>
+
+                                    <p>
+                                        Celsius
+                                    </p>
+
+                                    <h3 id="celsiusResult">
+                                        --
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Fahrenheit -->
+
+                            <div class="result-card">
+
+                                <div class="result-icon">
+                                    °F
+                                </div>
+
+                                <div>
+
+                                    <p>
+                                        Fahrenheit
+                                    </p>
+
+                                    <h3 id="fahrenheitResult">
+                                        --
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Kelvin -->
+
+                            <div class="result-card">
+
+                                <div class="result-icon">
+                                    K
+                                </div>
+
+                                <div>
+
+                                    <p>
+                                        Kelvin
+                                    </p>
+
+                                    <h3 id="kelvinResult">
+                                        --
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Shreya Adhate | Temperature Converter
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
