@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Calculator | Shreya Adhate</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                Calc<span>.</span>
+            </a>
+
+            <p>
+                Simple & Powerful Calculator
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="calculator-section">
+
+            <div class="calculator-container">
+
+                <!-- Heading -->
+
+                <div class="heading">
+
+                    <p class="small-title">
+                        JAVASCRIPT PROJECT
+                    </p>
+
+                    <h1>
+                        Smart
+                        <span>Calculator</span>
+                    </h1>
+
+                    <p class="description">
+                        Perform basic arithmetic calculations
+                        with a clean and responsive interface.
+                    </p>
+
+                </div>
+
+
+                <!-- Calculator -->
+
+                <div class="calculator">
+
+                    <!-- Display -->
+
+                    <div class="display-container">
+
+                        <div
+                            id="previousDisplay"
+                            class="previous-display"
+                        >
+                        </div>
+
+                        <div
+                            id="display"
+                            class="display"
+                        >
+                            0
+                        </div>
+
+                    </div>
+
+
+                    <!-- Error -->
+
+                    <div
+                        id="errorMessage"
+                        class="error-message"
+                    >
+                    </div>
+
+
+                    <!-- Buttons -->
+
+                    <div class="buttons">
+
+                        <!-- Row 1 -->
+
+                        <button
+                            class="btn function"
+                            data-action="clear"
+                        >
+                            C
+                        </button>
+
+                        <button
+                            class="btn function"
+                            data-action="backspace"
+                        >
+                            ⌫
+                        </button>
+
+                        <button
+                            class="btn operator"
+                            data-operator="÷"
+                        >
+                            ÷
+                        </button>
+
+                        <button
+                            class="btn operator"
+                            data-operator="×"
+                        >
+                            ×
+                        </button>
+
+
+                        <!-- Row 2 -->
+
+                        <button
+                            class="btn number"
+                            data-number="7"
+                        >
+                            7
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-number="8"
+                        >
+                            8
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-number="9"
+                        >
+                            9
+                        </button>
+
+                        <button
+                            class="btn operator"
+                            data-operator="−"
+                        >
+                            −
+                        </button>
+
+
+                        <!-- Row 3 -->
+
+                        <button
+                            class="btn number"
+                            data-number="4"
+                        >
+                            4
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-number="5"
+                        >
+                            5
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-number="6"
+                        >
+                            6
+                        </button>
+
+                        <button
+                            class="btn operator"
+                            data-operator="+"
+                        >
+                            +
+                        </button>
+
+
+                        <!-- Row 4 -->
+
+                        <button
+                            class="btn number"
+                            data-number="1"
+                        >
+                            1
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-number="2"
+                        >
+                            2
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-number="3"
+                        >
+                            3
+                        </button>
+
+                        <button
+                            class="btn equals"
+                            data-action="equals"
+                        >
+                            =
+                        </button>
+
+
+                        <!-- Row 5 -->
+
+                        <button
+                            class="btn number zero"
+                            data-number="0"
+                        >
+                            0
+                        </button>
+
+                        <button
+                            class="btn number"
+                            data-action="decimal"
+                        >
+                            .
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Shreya Adhate | Calculator
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
