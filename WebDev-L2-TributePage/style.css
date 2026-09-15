@@ -1,0 +1,544 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   COLORS
+========================= */
+
+:root {
+    --dark: #2b2118;
+    --brown: #5c4033;
+    --gold: #b8860b;
+    --gold-light: #d4a84f;
+    --cream: #f8f1e5;
+    --paper: #fffdf8;
+    --terracotta: #a0522d;
+    --text: #44372d;
+    --muted: #75675b;
+    --border: #dfcdb2;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: "Inter", sans-serif;
+
+    color: var(--text);
+
+    background: var(--cream);
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 55vh;
+
+    padding: 80px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(212, 168, 79, 0.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(160, 82, 45, 0.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #211811,
+            #3b2920,
+            #5c4033
+        );
+}
+
+
+.hero-content {
+    max-width: 850px;
+}
+
+
+.eyebrow {
+    margin-bottom: 18px;
+
+    color: var(--gold-light);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.hero h1 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(52px, 9vw, 90px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    color: #e4bd69;
+}
+
+
+.tagline {
+    font-size: 18px;
+
+    color: #eadcc8;
+}
+
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.image-section {
+    padding: 65px 20px;
+
+    background: var(--paper);
+}
+
+
+.image-container {
+    width: min(900px, 100%);
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.kalam-image {
+    width: 100%;
+
+    max-width: 700px;
+
+    max-height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    border: 10px solid white;
+
+    outline: 1px solid var(--border);
+
+    box-shadow:
+        0 20px 45px rgba(60, 40, 20, 0.20);
+}
+
+
+.image-caption {
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   COMMON CONTENT
+========================= */
+
+.content {
+    width: min(900px, 90%);
+
+    margin: auto;
+}
+
+
+.section-label {
+    margin-bottom: 10px;
+
+    color: var(--terracotta);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+h2 {
+    margin-bottom: 30px;
+
+    color: var(--dark);
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(36px, 6vw, 52px);
+
+    line-height: 1.15;
+}
+
+
+h2 span {
+    color: var(--gold);
+}
+
+
+/* =========================
+   BIOGRAPHY
+========================= */
+
+.biography {
+    padding: 90px 20px;
+
+    background: var(--cream);
+}
+
+
+.biography p:not(.section-label) {
+    margin-bottom: 22px;
+
+    color: var(--text);
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-section {
+    padding: 90px 20px;
+
+    background: #eee1cc;
+}
+
+
+.timeline {
+    position: relative;
+
+    margin-top: 45px;
+}
+
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 82px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--gold),
+            var(--terracotta)
+        );
+}
+
+
+.timeline-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.year {
+    color: var(--terracotta);
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    text-align: right;
+}
+
+
+.timeline-card {
+    position: relative;
+
+    padding: 22px 25px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 20, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.timeline-card:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--gold-light);
+
+    box-shadow:
+        0 12px 30px rgba(70, 45, 20, 0.12);
+}
+
+
+.timeline-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: -34px;
+
+    top: 23px;
+
+    width: 11px;
+
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    border: 4px solid #eee1cc;
+}
+
+
+.timeline-card h3 {
+    margin-bottom: 6px;
+
+    color: var(--dark);
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 22px;
+}
+
+
+.timeline-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote-section {
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8a5a35,
+            #5c4033
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.quote-container {
+    width: min(850px, 90%);
+
+    margin: auto;
+}
+
+
+.quote-mark {
+    height: 45px;
+
+    font-family: Georgia, serif;
+
+    font-size: 80px;
+
+    line-height: 0.8;
+
+    color: #e4bd69;
+}
+
+
+blockquote {
+    margin: 20px 0;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(25px, 5vw, 40px);
+
+    line-height: 1.4;
+}
+
+
+.quote-container p {
+    color: #eadcc8;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   LEGACY
+========================= */
+
+.legacy {
+    padding: 90px 20px;
+
+    background: var(--paper);
+}
+
+
+.legacy p:not(.section-label) {
+    margin-bottom: 20px;
+
+    color: var(--text);
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 20px;
+
+    background: var(--dark);
+
+    color: #d4b98a;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+footer p:first-child {
+    margin-bottom: 5px;
+
+    color: white;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+    .hero {
+        min-height: 50vh;
+
+        padding: 60px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+
+    .tagline {
+        font-size: 15px;
+    }
+
+
+    .biography,
+    .timeline-section,
+    .legacy {
+        padding: 65px 20px;
+    }
+
+
+    .timeline::before {
+        left: 12px;
+    }
+
+
+    .timeline-item {
+        display: block;
+
+        padding-left: 35px;
+    }
+
+
+    .year {
+        margin-bottom: 10px;
+
+        text-align: left;
+    }
+
+
+    .timeline-card::before {
+        left: -29px;
+    }
+
+
+    .kalam-image {
+        max-height: 400px;
+    }
+
+
+    blockquote {
+        font-size: 25px;
+    }
+
+}
