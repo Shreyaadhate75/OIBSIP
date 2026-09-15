@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | SecureSpace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="dashboard-body">
+
+    <header class="dashboard-header">
+
+        <div class="dashboard-nav">
+
+            <div class="brand">
+                Secure<span>Space</span>
+            </div>
+
+            <button
+                id="logoutButton"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="dashboard-main">
+
+        <section class="welcome-card">
+
+            <div class="welcome-icon">
+                ✓
+            </div>
+
+            <p class="auth-label">
+                AUTHENTICATION SUCCESSFUL
+            </p>
+
+            <h1>
+                Welcome,
+                <span id="dashboardUsername">
+                    User
+                </span>!
+            </h1>
+
+            <p>
+                You have successfully logged in.
+                This is your protected dashboard.
+            </p>
+
+        </section>
+
+
+        <section class="info-grid">
+
+            <div class="info-card">
+
+                <span>
+                    ACCOUNT
+                </span>
+
+                <h2>
+                    Active
+                </h2>
+
+                <p>
+                    Your account is currently logged in.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    SECURITY
+                </span>
+
+                <h2>
+                    Protected
+                </h2>
+
+                <p>
+                    Your password is stored using SHA-256 hashing.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    SESSION
+                </span>
+
+                <h2>
+                    Active
+                </h2>
+
+                <p>
+                    Logout to end your current session.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Created by Shreya Adhate
+        </p>
+
+        <p>
+            OASIS INFOBYTE — Web Development & Designing
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
